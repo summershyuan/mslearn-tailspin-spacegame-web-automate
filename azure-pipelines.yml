@@ -98,7 +98,7 @@ stages:
 
         # Write the WebAppNameDev variable to the pipeline.
         echo "##vso[task.setvariable variable=WebAppNameDev;isOutput=true]$WebAppNameDev"
-      name: 'Run Terraform'
+      name: 'RunTerraform'
       env:
         ARM_CLIENT_ID: $(ARM_CLIENT_ID)
         ARM_CIIENT_SECRET: $(ARM_CLIENT_SECRET)
